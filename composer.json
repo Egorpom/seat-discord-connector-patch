@@ -1,0 +1,18 @@
+{
+  "name": "egorpom/seat-discord-connector-patch",
+  "type": "seat-plugin",
+  "require": {
+    "cweagans/composer-patches": "~1.0",
+    "warlof/seat-discord-connector": "~4.0"
+  },
+  "config": {
+    "preferred-install": "source"
+  },
+  "extra": {
+    "patches": {
+      "warlof/seat-discord-connector": {
+        "Add whitelist for discord roles": "https://github.com/Egorpom/seat-discord-connector/commit/770be966dda79f27444f44e9a08e5a6ec9998fc7.patch"
+      }
+    }
+  }
+}
