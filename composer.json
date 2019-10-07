@@ -11,7 +11,7 @@
   "extra": {
     "patches": {
       "warlof/seat-discord-connector": {
-        "Add whitelist for discord roles": "./whitelist.patch"
+        "Add whitelist for discord roles": "./whitelist.txt"
       }
     }
   }
