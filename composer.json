@@ -11,7 +11,7 @@
   "extra": {
     "patches": {
       "warlof/seat-discord-connector": {
-        "Add whitelist for discord roles": "https://gist.githubusercontent.com/Egorpom/be89eac15a418c5d3ef6a93aa242cd42/raw/c05ddcdb697e2aa24b16ecf34664c6ce109454d4/whitelist.patch"
+        "Add whitelist for discord roles": "./whitelist.patch"
       }
     }
   }
