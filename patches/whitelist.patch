@@ -1,19 +1,22 @@
 diff --git src/Driver/DiscordClient.php src/Driver/DiscordClient.php
-index 7607aca..4e65da0 100644
+index 7607aca..31fcb21 100644
 --- src/Driver/DiscordClient.php
 +++ src/Driver/DiscordClient.php
-@@ -285,6 +285,10 @@ class DiscordClient implements IClient
+@@ -285,6 +285,13 @@ class DiscordClient implements IClient
          } while (true);
      }
  
 +    CONST whitelistRoleIds = [
-+        "630206902185492510"
++        "630206940127035425", //Fleets
++        "630175009071169561", //Zero To High.
++        "631168195360849931", //Zero To High. Capitals
++        "631166255541256232" //Fleet Com.
 +    ];
 +
      /**
       * @throws \GuzzleHttp\Exception\GuzzleException
       * @throws \Seat\Services\Exceptions\SettingException
-@@ -302,6 +306,8 @@ class DiscordClient implements IClient
+@@ -302,6 +309,8 @@ class DiscordClient implements IClient
              // ignore managed roles (ie: booster)
              if ($role_attributes['managed']) continue;
  
