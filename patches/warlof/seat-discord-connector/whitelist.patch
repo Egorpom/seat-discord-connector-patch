@@ -1,5 +1,5 @@
 diff --git src/Driver/DiscordClient.php src/Driver/DiscordClient.php
-index 7607aca..31fcb21 100644
+index 7607aca..cd29026 100644
 --- src/Driver/DiscordClient.php
 +++ src/Driver/DiscordClient.php
 @@ -285,6 +285,13 @@ class DiscordClient implements IClient
@@ -25,3 +25,23 @@ index 7607aca..31fcb21 100644
              $role = new DiscordRole($role_attributes);
              $this->roles->put($role->getId(), $role);
          }
+diff --git src/Driver/DiscordMember.php src/Driver/DiscordMember.php
+index a610e2d..e57c758 100644
+--- src/Driver/DiscordMember.php
++++ src/Driver/DiscordMember.php
+@@ -101,6 +101,7 @@ class DiscordMember implements IUser
+      */
+     public function setName(string $name): bool
+     {
++        /*
+         $nickname = Str::limit($name, 32, '');
+ 
+         DiscordClient::getInstance()->sendCall('PATCH', '/guilds/{guild.id}/members/{user.id}', [
+@@ -110,6 +111,7 @@ class DiscordMember implements IUser
+         ]);
+ 
+         $this->nick = $nickname;
++        */
+ 
+         return true;
+     }

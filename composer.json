@@ -1,5 +1,5 @@
 {
-  "name": "egorpom/seat-discord-connector-patch",
+  "name": "egorpom/seat-patches",
   "type": "seat-plugin",
   "require": {
     "vaimo/composer-patches": "~4.2",
@@ -11,7 +11,7 @@
   "extra": {
     "patches": {
       "warlof/seat-discord-connector": {
-        "Add whitelist for discord roles": "patches/whitelist.patch"
+        "Add whitelist for discord roles, disable user rename": "patches/warlof/seat-discord-connector/whitelist.patch"
       }
     }
   }
