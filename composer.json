@@ -3,7 +3,8 @@
   "type": "seat-plugin",
   "require": {
     "vaimo/composer-patches": "~4.2",
-    "warlof/seat-discord-connector": "~4.0"
+    "warlof/seat-discord-connector": "~4.0",
+    "kassie/calendar": "~3.0"
   },
   "config": {
     "preferred-install": "source"
@@ -12,6 +13,9 @@
     "patches": {
       "warlof/seat-discord-connector": {
         "Add whitelist for discord roles, disable user rename": "patches/warlof/seat-discord-connector/whitelist.patch"
+      },
+      "kassie/calendar": {
+        "Remove alerts on update operation and 15 minutes alerts before start. Reorder fields in ping message. Add staging & description to ping": "patches/kassie/calendar/alerts.patch"
       }
     }
   }
